@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="284dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="25dp"
+        android:columnWidth="100dp"
+        android:gravity="center"
+        android:horizontalSpacing="1dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/infoText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="16dp"
+        />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/infoText"
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="110dp"
+        android:text="Click on an image or enter coordinates." />
+
+
+</LinearLayout>
+
